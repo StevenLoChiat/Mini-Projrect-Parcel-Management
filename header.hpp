@@ -17,12 +17,24 @@ struct Parcel {
     string status;
 };
 
-void loadData(vector<Parcel>& parcels);
-void addParcel(vector<Parcel>& parcels);
-void editParcel(vector<Parcel>& parcels);
+
+//MENU
 void showMenu();
 int getValidatedChoice();
+
+//FILE HANDLING
+void loadData(vector<Parcel>& parcels);
+void saveData(const vector<Parcel>& parcels);
+
+//PARCEL MANAGEMENT
+void addParcel(vector<Parcel>& parcels);
+void editParcel(vector<Parcel>& parcels);
 void deleteParcel(vector<Parcel>& parcels);
 void searchParcel(const vector<Parcel>& parcels);
+
+//DISPLAY
 void displayAllParcels(const vector<Parcel>& parcels);
-void saveData(const vector<Parcel>& parcels);
+
+//VALIDATION
+bool isValidID(const string& id);
+bool isValidStatus(const string& status);
