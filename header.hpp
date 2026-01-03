@@ -21,6 +21,7 @@ struct Parcel {
 //MENU
 void showMenu();
 int getValidatedChoice();
+void handleMenuChoice(int choice, vector<Parcel>& parcels);
 
 //FILE HANDLING
 void loadData(vector<Parcel>& parcels);
