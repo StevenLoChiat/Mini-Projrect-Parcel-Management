@@ -32,6 +32,10 @@ void editParcel(std::vector<Parcel>& parcels);
 void deleteParcel(std::vector<Parcel>& parcels);
 void searchParcel(const std::vector<Parcel>& parcels);
 
+//VALIDATION
+bool isValidID(const string & id);
+bool isValidStatus(const string & status);
+
 // DISPLAY
 void displayAllParcels(const std::vector<Parcel>& parcels);
 
