@@ -3,39 +3,36 @@
 //Function      : Header file for parcel management system
 
 
-#include <iostream>
-#include <vector>
-#include <string>
+#ifndef HEADER_HPP
+#define HEADER_HPP
 
-using namespace std;
+#include <string>
+#include <vector>
 
 struct Parcel {
-    string id;
-    string sender;
-    string receiver;
+    std::string id;
+    std::string sender;
+    std::string receiver;
     double weight;
-    string status;
+    std::string status;
 };
 
-
-//MENU
+// MENU
 void showMenu();
 int getValidatedChoice();
-void handleMenuChoice(int choice, vector<Parcel>& parcels);
+void handleMenuChoice(int choice, std::vector<Parcel>& parcels);
 
-//FILE HANDLING
-void loadData(vector<Parcel>& parcels);
-void saveData(const vector<Parcel>& parcels);
+// FILE HANDLING
+void loadData(std::vector<Parcel>& parcels);
+void saveData(const std::vector<Parcel>& parcels);
 
-//PARCEL MANAGEMENT
-void addParcel(vector<Parcel>& parcels);
-void editParcel(vector<Parcel>& parcels);
-void deleteParcel(vector<Parcel>& parcels);
-void searchParcel(const vector<Parcel>& parcels);
+// PARCEL MANAGEMENT
+void addParcel(std::vector<Parcel>& parcels);
+void editParcel(std::vector<Parcel>& parcels);
+void deleteParcel(std::vector<Parcel>& parcels);
+void searchParcel(const std::vector<Parcel>& parcels);
 
-//DISPLAY
-void displayAllParcels(const vector<Parcel>& parcels);
+// DISPLAY
+void displayAllParcels(const std::vector<Parcel>& parcels);
 
-//VALIDATION
-bool isValidID(const string& id);
-bool isValidStatus(const string& status);
+#endif
