@@ -10,6 +10,12 @@ void addParcel(vector<Parcel>& parcels) {
     cout << "Enter Parcel ID: ";
     getline(cin, p.id);
 
+    // Validate ID format
+    if (!isValidID(p.id)) {
+        cout << "Invalid Parcel ID format! (Example: P001)" << endl;
+        return;
+    }
+
     // Optional: check duplicate ID
     for (const auto& parcel : parcels) {
         if (parcel.id == p.id) {
@@ -30,6 +36,11 @@ void addParcel(vector<Parcel>& parcels) {
 
     cout << "Enter Status (Pending / Delivered / In Transit): ";
     getline(cin, p.status);
+
+    if (!isValidStatus(p.status)) {
+        cout << "Invalid status entered!" << endl;
+        return;
+    }
 
     parcels.push_back(p);
 
