@@ -7,7 +7,7 @@ using namespace std;
 void addParcel(vector<Parcel>& parcels) {
     Parcel p;
 
-    cout << "Enter Parcel ID: ";
+    cout << "Enter Parcel ID : ";
     getline(cin, p.id);
 
     // Validate ID format
