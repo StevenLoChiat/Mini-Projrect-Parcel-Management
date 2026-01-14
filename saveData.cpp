@@ -1,24 +1,25 @@
-//MUHAMMAD AZFAR BIN ZULKIFLI
 #include <iostream>
 #include "header.hpp"
+#include <fstream>
+
 
 using namespace std;
 
-void saveData(const vector<Parcel>& parcels)
-{
-    int exit;
-    cout << "Are you sure you want to exit the programme?(Y/N) :";
-    cin >> exit;
-    if (exit == 'Y')
-    {
+void saveData(const vector<Parcel>& parcels) {
+    ofstream file("parcels.txt");
 
+    if (!file) {
+        cout << "Error opening file for saving!" << endl;
+        return;
     }
-    if (exit == 'N')
-    {
-        showMenu();
+
+    for (const auto& p : parcels) {
+        file << p.id << ","
+             << p.sender << ","
+             << p.receiver << ","
+             << p.weight << ","
+             << p.status << endl;
     }
-    else
-    {
-        cout << "Invalid input";
-    }
+
+    file.close();
 }
