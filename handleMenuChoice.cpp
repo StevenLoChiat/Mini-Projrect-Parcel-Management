@@ -30,6 +30,6 @@ void handleMenuChoice(int choice, vector<Parcel>& parcels) {
             cout << "Data saved. Exiting the program." << endl;
             break;
         default:
-            cout << "Invalid choice. Please try again." << endl;
+            break;
     }
 }
