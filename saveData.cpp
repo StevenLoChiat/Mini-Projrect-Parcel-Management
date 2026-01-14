@@ -13,6 +13,9 @@ void saveData(const vector<Parcel>& parcels) {
         return;
     }
 
+        file << "ParcelID,Sender,Receiver,Weight,Status" << endl;
+
+        
     for (const auto& p : parcels) {
         file << p.id << ","
              << p.sender << ","
