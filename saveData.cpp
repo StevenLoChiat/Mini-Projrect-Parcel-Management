@@ -1,3 +1,9 @@
+//Programmer    : BEH MING YANG
+//Matric No.    : 24303532
+//Function      : To save parcel data to a file
+// Note: Originally assigned to MUHAMMAD AZFAR BINZULKIFLI, but completed by BEH MING YANG due to time constraints
+
+
 #include <iostream>
 #include "header.hpp"
 #include <fstream>

@@ -1,3 +1,8 @@
+//Programmer    : YAP CHUN KEAT
+//Matric No.    : 24300915
+//Function      : To delete a parcel from the system
+
+
 #include <iostream>
 #include "header.hpp"
 

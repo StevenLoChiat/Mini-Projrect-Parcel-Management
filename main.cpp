@@ -1,6 +1,7 @@
-//coder         : STEVEN LO CHIAT
+//Programmer    : STEVEN LO CHIAT
 //Matric No.    : 24301075
 //Function      : Main program for managing parcels
+
 
 #include <iostream>
 #include "header.hpp"
@@ -14,6 +15,7 @@ int main() {
     int choice;
     do {
         showMenu();
+
         choice = getValidatedChoice();
 
         handleMenuChoice(choice, parcels);

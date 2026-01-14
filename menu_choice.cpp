@@ -1,8 +1,14 @@
+//Programmer    : STEVEN LO CHIAT
+//Matric No.    : 24301075
+//Function      : Handle menu choices for managing parcels
+
+
 #include <iostream>
 #include "header.hpp"
 using namespace std;
 
 void handleMenuChoice(int choice, vector<Parcel>& parcels) {
+
     switch (choice) {
         case 1:
             addParcel(parcels);

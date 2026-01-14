@@ -1,3 +1,8 @@
+//Programmer    : BEH MING YANG
+//Matric No.    : 24303532
+//Function      : To edit an existing parcel in the system
+// Note: Originally assigned to MUHAMMAD AZFAR BINZULKIFLI, but completed by BEH MING YANG due to time constraints
+
 #include <iostream>
 #include "header.hpp"
 
@@ -29,7 +34,7 @@ void editParcel(vector<Parcel>& parcels) {
                 return;
             }
 
-            cout << "Parcel information updated successfully!" << endl;
+            cout << "Parcel information updated successfully!!!" << endl;
             return;
         }
     }

@@ -1,3 +1,8 @@
+//Programmer    : STEVEN LO CHIAT
+//Matric No.    : 24301075
+//Function      : To validate user menu input and return a valid choice (1–6)
+
+
 #include <iostream>
 #include "header.hpp"
 #include <limits>
