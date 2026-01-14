@@ -14,7 +14,9 @@ void saveData(const vector<Parcel>& parcels) {
     }
 
 
+   
     for (const auto& p : parcels) {
+        if (p.id.empty()) continue; 
         file << p.id << ","
              << p.sender << ","
              << p.receiver << ","
