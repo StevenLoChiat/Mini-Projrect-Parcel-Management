@@ -12,6 +12,8 @@ int main() {
     vector<Parcel> parcels;
     loadData(parcels);
 
+    cout << "WELCOME TO THE PARCEL MANAGEMENT SYSTEM!" << endl;
+    
     int choice;
     do {
         showMenu();

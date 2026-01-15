@@ -17,14 +17,14 @@ void searchParcel(const vector<Parcel>& parcels) {
 
     for (const auto& p : parcels) {
         if (p.id == searchID) {
-            cout << "                                    " << endl;
-            cout << "====================================" << endl;
+            cout << " " << endl;
+            cout << "========================================" << endl;
             cout << "Parcel ID   : " << p.id << endl;
             cout << "Sender      : " << p.sender << endl;
             cout << "Receiver    : " << p.receiver << endl;
             cout << "Weight (kg) : " << p.weight << endl;
             cout << "Status      : " << p.status << endl;
-            cout << "====================================" << endl;
+            cout << "========================================" << endl;
             found = true;
             break;
         }
