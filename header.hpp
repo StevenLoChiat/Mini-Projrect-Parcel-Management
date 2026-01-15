@@ -1,4 +1,4 @@
-//coder         : STEVEN LO CHIAT
+//Programmer    : STEVEN LO CHIAT
 //Matric No.    : 24301075
 //Function      : Header file for parcel management system
 
