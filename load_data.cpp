@@ -7,7 +7,6 @@
 #include "header.hpp"
 #include <fstream>
 #include <sstream>
-
 using namespace std;
 
 void loadData(vector<Parcel>& parcels) {

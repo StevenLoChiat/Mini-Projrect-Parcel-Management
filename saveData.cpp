@@ -7,8 +7,6 @@
 #include <iostream>
 #include "header.hpp"
 #include <fstream>
-
-
 using namespace std;
 
 void saveData(const vector<Parcel>& parcels) {
@@ -19,8 +17,6 @@ void saveData(const vector<Parcel>& parcels) {
         return;
     }
 
-
-   
     for (const auto& p : parcels) {
         if (p.id.empty()) continue; 
         file << p.id << ","
