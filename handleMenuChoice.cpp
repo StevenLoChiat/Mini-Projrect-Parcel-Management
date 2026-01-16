@@ -4,6 +4,7 @@
 
 
 #include <iostream>
+#include <unistd.h>
 #include "header.hpp"
 using namespace std;
 
@@ -28,6 +29,7 @@ void handleMenuChoice(int choice, vector<Parcel>& parcels) {
         case 6:
             saveData(parcels);
             cout << "Data saved. Exiting the program." << endl;
+            sleep(3);
             break;
         default:
             break;
