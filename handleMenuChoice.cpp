@@ -29,7 +29,7 @@ void handleMenuChoice(int choice, vector<Parcel>& parcels) {
         case 6:
             saveData(parcels);
             cout << "Data saved. Exiting the program." << endl;
-            sleep(3);
+            system("pause");
             break;
         default:
             break;
